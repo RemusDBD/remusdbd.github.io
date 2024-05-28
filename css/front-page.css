@@ -11,7 +11,7 @@ body {
 .slide-container {
     font-family: 'martix', sans-serif;
     text-align: center;
-    color: white;
+    color: #48ff00;
 }
 
 .slide {}
@@ -88,27 +88,27 @@ body {
 }
 
 .links-container>ul>li:nth-of-type(1) {
-    animation-delay: 2.4s;
+    animation-delay: 1.4s;
 }
 
 .links-container>ul>li:nth-of-type(2) {
-    animation-delay: 2.5s;
+    animation-delay: 1.5s;
 }
 
 .links-container>ul>li:nth-of-type(3) {
-    animation-delay: 2.6s;
+    animation-delay: 1.6s;
 }
 
 .links-container>ul>li:nth-of-type(4) {
-    animation-delay: 2.7s;
+    animation-delay: 1.7s;
 }
 
 .links-container>ul>li:nth-of-type(5) {
-    animation-delay: 2.8s;
+    animation-delay: 1.8s;
 }
 
 .links-container>ul>li:nth-of-type(6) {
-    animation-delay: 2.9s;
+    animation-delay: 1.9s;
 }
 
 @keyframes link-fade-in-animation {
@@ -140,14 +140,14 @@ a.social:visited {
 }
 
 a.social:hover {
-    color: white;
+    color: #48ff00;
     text-decoration: none;
     transform: scale(1.1);
     transition: linear 0.1s;
 }
 
 a.social:active {
-    color: white;
+    color: #48ff00;
     text-decoration: none;
 }
 
@@ -164,25 +164,25 @@ a.button {
 }
 
 a.button:link {
-    color: white;
+    color: #48ff00;
     text-decoration: none;
 }
 
 a.button:visited {
-    color: white;
+    color: #48ff00;
     text-decoration: none;
 }
 
 a.button:hover {
     background-color: #151515;
-    color: white;
+    color: #48ff00;
     text-decoration: none;
     transform: scale(1.1);
     transition: linear 0.1s;
 }
 
 a.button:active {
-    color: white;
+    color: #48ff00;
     text-decoration: none;
 }
 
@@ -196,7 +196,7 @@ a.button:active {
     /* visibility: hidden; */
     width: 120px;
     background-color: #080808;
-    color: #fff;
+    color: #48ff00;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
