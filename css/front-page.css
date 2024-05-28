@@ -3,13 +3,13 @@ body {
 }
 
 @font-face {
-    font-family: 'Ubuntu Regular';
-    src: url('../assets/Ubuntu-Regular.ttf') format('truetype');
+    font-family: 'martix';
+    src: url('../assets/matrix.ttf') format('truetype');
 }
 
 
 .slide-container {
-    font-family: 'Ubuntu Regular', sans-serif;
+    font-family: 'martix', sans-serif;
     text-align: center;
     color: white;
 }
