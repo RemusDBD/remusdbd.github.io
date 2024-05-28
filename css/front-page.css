@@ -3,13 +3,13 @@ body {
 }
 
 @font-face {
-    font-family: 'martix';
-    src: url('../assets/matrix.ttf') format('truetype');
+    font-family: 'NEXTSTEP';
+    src: url('../assets/NEXTSTEP.ttf') format('truetype');
 }
 
 
 .slide-container {
-    font-family: 'martix', sans-serif;
+    font-family: 'NEXTSTEP', sans-serif;
     text-align: center;
     color: #48ff00;
 }
