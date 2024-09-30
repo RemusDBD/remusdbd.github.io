@@ -28,9 +28,9 @@
         /* If the language contains a region code, get only the 2-character lang code. For example en-US -> en. */
         var currentBLang = langBrowser.split('-')[0];
         new google.translate.TranslateElement({
-        pageLanguage: 'en',
+        pageLanguage: 'cn',
         }, 'google_translate_element');
-        if (currentBLang != "en"){
+        if (currentBLang != "cn"){
         setTimeout(function() {
         var selectElement = document.querySelector('#google_translate_element select');
         selectElement.value = currentBLang;
