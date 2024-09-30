@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <html lang="en">
     <head>
         <title>RemusDBD-黎明死線DBD教學-內容創作者-</title>
         <meta charset="UTF-8">
+         <style>
+           .skiptranslate, #google_translate_element {display: none;}
+            body {min-height: 0px !important; position: static !important; top: 0px !important;}
+        </style>
         <link rel="stylesheet" href="css/front-page.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
         <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
@@ -21,9 +26,17 @@
         <div id="google_translate_element"></div>
         <script type="text/javascript">
         function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');}
-        </script>
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            $.when(
+                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,cn',
+                    layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element')
+            ).done(function(){
+                var select = document.getElementsByClassName('goog-te-combo')[0];
+                select.selectedIndex = 1;
+                select.addEventListener('click', function () {
+                    select.dispatchEvent(new Event('change'));
+                });
+                select.click();
+            });
         <!-- End for language dropdown-->
             
     </select>
