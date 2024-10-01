@@ -14,21 +14,6 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="description" content="黎明死線教學-DBD教學-電腦安全-Cybersecurity-投資-Investing"/>
         <meta name="googlebot-news" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-        <script defer>
-        function applyCustomStyles() {
-          const translateElement = document.querySelector('#google_translate_element .goog-te-gadget');
-          if (translateElement) {
-            translateElement.style.fontFamily = "'NEXTSTEP', sans-serif";
-            translateElement.style.color = '#48ff00';
-            translateElement.style.backgroundColor = '#101010';
-            translateElement.style.border = '1px solid #48ff00';
-          }
-        }
-
-        window.onload = function() {
-          applyCustomStyles();
-        }
-    </script>
     </head>
 
     <body>
@@ -154,5 +139,20 @@ function googleTranslateElementInit() {
                 </div>
             </div>
         </div>
+        <script>
+        function applyCustomStyles() {
+          const translateElement = document.querySelector('#google_translate_element .goog-te-gadget');
+          if (translateElement) {
+            translateElement.style.fontFamily = "'NEXTSTEP', sans-serif";
+            translateElement.style.color = '#48ff00';
+            translateElement.style.backgroundColor = '#101010';
+            translateElement.style.border = '1px solid #48ff00';
+          }
+        }
+
+        window.onload = function() {
+          applyCustomStyles();
+        }
+    </script>
     </body>
 </html>
