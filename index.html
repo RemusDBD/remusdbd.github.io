@@ -19,6 +19,21 @@
     <body>
         
         <!-- Start for language dropdown-->
+        <script defer>
+        function applyCustomStyles() {
+          const translateElement = document.querySelector('#google_translate_element .goog-te-gadget');
+          if (translateElement) {
+            translateElement.style.fontFamily = "'NEXTSTEP', sans-serif";
+            translateElement.style.color = '#48ff00';
+            translateElement.style.backgroundColor = '#101010';
+            translateElement.style.border = '1px solid #48ff00';
+          }
+        }
+
+        window.onload = function() {
+          applyCustomStyles();
+        }
+    </script>
 <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
@@ -29,12 +44,12 @@ function googleTranslateElementInit() {
     
 <style>
 /* Hide the default Google Translate banner */
-.goog-te-banner-frame.skiptranslate {
+#google_translate_element .goog-te-banner-frame.skiptranslate {
     display: none !important;
 }
 
 /* Hide the top toolbar */
-.goog-te-gadget {
+#google_translate_element .goog-te-gadget {
     font-family: 'NEXTSTEP', sans-serif !important;
     color: #48ff00 !important;
     font-size: 16px !important;
@@ -46,7 +61,7 @@ function googleTranslateElementInit() {
 }
 
 /* Style the Google Translate dropdown */
-select.goog-te-combo {
+#google_translate_element .goog-te-gadget select.goog-te-combo {
     background-color: #080808 !important;
     color: #48ff00 !important;
     border: 1px solid #48ff00 !important;
@@ -57,15 +72,15 @@ select.goog-te-combo {
 }
 
 /* Change color when hovering over the dropdown */
-select.goog-te-combo:hover {
+#google_translate_element .goog-te-gadget select.goog-te-combo:hover {
     background-color: #151515 !important;
     border-color: #48ff00 !important;
     color: #48ff00 !important;
 }
 
 /* Add a slight scale effect on hover */
-select.goog-te-combo:active,
-select.goog-te-combo:focus {
+#google_translate_element .goog-te-gadget select.goog-te-combo:active,
+#google_translate_element .goog-te-gadget select.goog-te-combo:focus {
     transform: scale(1.05) !important;
     transition: linear 0.1s !important;
 }
