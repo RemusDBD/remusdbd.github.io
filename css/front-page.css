@@ -6,13 +6,13 @@ body {
     font-family: 'NEXTSTEP', sans-serif;
 }
 
-/* Ensure the font scales responsively */
+/* Font face */
 @font-face {
     font-family: 'NEXTSTEP';
     src: url('../assets/NEXTSTEP.ttf') format('truetype');
 }
 
-/* Responsive slide container */
+/* Slide container */
 .slide-container {
     font-family: 'NEXTSTEP', sans-serif;
     text-align: center;
@@ -20,6 +20,7 @@ body {
     padding: 5vw;
 }
 
+/* Avatar container */
 .avatar-container {
     position: relative;
     animation-name: avatar-fade-in-animation;
@@ -28,8 +29,8 @@ body {
 }
 
 .avatar-container>img {
-    width: 40vw; /* Responsive size */
-    max-width: 300px; /* Cap it for larger screens */
+    width: 40vw;
+    max-width: 300px;
     margin: 5vw;
 }
 
@@ -67,57 +68,58 @@ body {
 
 /* Links container */
 .links-container {
-    display: table;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
 .links-container>ul {
-    width: 100%;
     display: flex;
-    flex-direction: column; /* Stack on small screens */
-    list-style: none;
-    padding-left: 0;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
 }
 
 .links-container>ul>li {
-    position: relative;
+    margin: 1vw;
+    padding: 1vw;
+    display: inline-block;
     opacity: 0;
-    padding: 2vw;
     animation-name: link-fade-in-animation;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 
-.links-container-main>ul>li {
-    width: 100%; /* Full width on mobile */
-    text-align: center;
-    margin-bottom: 2vw;
+@keyframes link-fade-in-animation {
+    from {
+        opacity: 0;
+        top: 50px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0px;
+    }
 }
 
-.links-container>ul>li:nth-of-type(1) {
-    animation-delay: 1.4s;
-}
-
-.links-container>ul>li:nth-of-type(2) {
-    animation-delay: 1.5s;
-}
-
-/* Button styles */
+/* Button styling */
 a.button {
     font-weight: bold;
-    padding: 2vw;
-    display: block;
+    padding: 10px;
+    display: inline-block;
     background-color: #080808;
     border-radius: 7px;
     border: 1px solid #222;
     box-shadow: black 0px 3px;
     color: #48ff00;
     text-decoration: none;
-    transition: linear 0.1s;
+    transition: transform 0.1s, background-color 0.1s;
     font-size: 4vw; /* Responsive font size */
-    max-width: 300px; /* Limit size on larger screens */
-    margin: 0 auto; /* Center the button */
+    margin: 5px;
 }
 
 a.button:hover {
@@ -127,8 +129,9 @@ a.button:hover {
 
 /* Social media icons */
 a.social {
-    font-size: 5vw; /* Adjust for mobile */
+    font-size: 14pt;
     color: #aaa;
+    text-decoration: none;
 }
 
 a.social:hover {
@@ -136,6 +139,7 @@ a.social:hover {
     transform: scale(1.1);
 }
 
+/* Tooltip styling */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -143,18 +147,19 @@ a.social:hover {
 }
 
 .tooltip .tooltiptext {
-    width: 100px;
+    width: 120px;
     background-color: #080808;
     color: #48ff00;
     text-align: center;
     border-radius: 6px;
-    padding: 5px;
+    padding: 5px 0;
     position: absolute;
     z-index: 1;
     top: 175%;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -60px;
     opacity: 0;
+    transition: opacity 0.1s;
     box-shadow: black 0px 3px;
 }
 
@@ -162,22 +167,25 @@ a.social:hover {
     opacity: 1;
 }
 
-/* Translation */
+/* Translation selector */
 .pullDownSelector {
     display: block;
     border-radius: 1em;
     width: auto;
-    height: auto;
     margin: 10px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .pullDownSelector>.item {
+    display: block;
     width: 2em;
     height: 2em;
     border-radius: 1em;
     margin: 5px;
-    transition: transform .5s, height .5s, margin .5s;
+    background-color: white;
+    background-size: auto 105%!important;
+    background-position: center center!important;
+    transition: transform 0.5s, height 0.5s, margin 0.5s;
 }
 
 #language {
@@ -189,7 +197,7 @@ a.social:hover {
 
 /* === Media Queries === */
 
-/* For screens smaller than 768px (tablets and smartphones) */
+/* For small screens like smartphones */
 @media (max-width: 768px) {
     .avatar-container>img {
         width: 60vw;
@@ -204,6 +212,7 @@ a.social:hover {
     a.button {
         font-size: 5vw;
         padding: 4vw;
+        margin: 3vw;
     }
 
     a.social {
@@ -211,11 +220,11 @@ a.social:hover {
     }
 
     .title-container h1 {
-        font-size: 8vw; /* Scale the title for mobile */
+        font-size: 8vw;
     }
 }
 
-/* For larger screens (desktops) */
+/* For larger screens */
 @media (min-width: 1024px) {
     .avatar-container>img {
         width: 250px;
