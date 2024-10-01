@@ -1,3 +1,53 @@
+/* === Start of dropdown translate === */
+/* Hide the default Google Translate banner */
+#google_translate_element .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+/* Hide the top toolbar */
+#google_translate_element .goog-te-gadget {
+    font-family: 'NEXTSTEP', sans-serif !important;
+    color: #48ff00 !important;
+    font-size: 16px !important;
+    background-color: #101010 !important; /* Match the background */
+    border: 1px solid #48ff00 !important; /* Adds a green border */
+    padding: 10px !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+}
+/* Style the Google Translate dropdown */
+#google_translate_element .goog-te-gadget select.goog-te-combo {
+    background-color: #080808 !important;
+    color: #48ff00 !important;
+    border: 1px solid #48ff00 !important;
+    padding: 5px !important;
+    font-size: 14px !important;
+    border-radius: 4px !important;
+    outline: none !important;
+}
+
+/* Change color when hovering over the dropdown */
+#google_translate_element .goog-te-gadget select.goog-te-combo:hover {
+    background-color: #151515 !important;
+    border-color: #48ff00 !important;
+    color: #48ff00 !important;
+}
+
+/* Add a slight scale effect on hover */
+#google_translate_element .goog-te-gadget select.goog-te-combo:active,
+#google_translate_element .goog-te-gadget select.goog-te-combo:focus {
+    transform: scale(1.05) !important;
+    transition: linear 0.1s !important;
+}
+
+/* Hide the dropdown in print view */
+@media print {
+    #google_translate_element {
+        display: none !important;
+    }
+}
+/* === End of dropdown translate === */
+/* === Start of Body === */
 body {
     background-color: #101010;
 }
