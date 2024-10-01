@@ -22,6 +22,8 @@ function changeLang(lang) {
     $('#subtitle1').text('內容創作者 (知名於黎明死線DBD教學)');
     $('#subtitle2').text('獨立安全研究員/ 道德黑客 / CTF奪旗玩家');
     $('#subtitle3').text('投機者');
+    $('#about-me-link').text(' 關於我');
+    $('#writeup-link').text(' CTF解題報告');
     
     // Hide English content and show Chinese content
     $('.en').each(function () {
@@ -35,6 +37,8 @@ function changeLang(lang) {
     $('#subtitle1').text('Content Creator');
     $('#subtitle2').text('Independent Security Researcher / Ethical Hacker / CTF Player');
     $('#subtitle3').text('Speculator');
+    $('#aboutme-link').text(' About Me');
+    $('#writeup-link').text(' Writeup');
     
     // Hide Chinese content and show English content
     $('.en').each(function () {
