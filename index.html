@@ -44,7 +44,6 @@ function googleTranslateElementInit() {
     border-radius: 5px !important;
     text-align: center !important;
 }
-
 /* Style the Google Translate dropdown */
 #google_translate_element .goog-te-gadget select.goog-te-combo {
     background-color: #080808 !important;
@@ -153,6 +152,25 @@ function googleTranslateElementInit() {
         window.onload = function() {
           applyCustomStyles();
         }
+    </script>
+    <script>
+   // Use MutationObserver to detect changes in the DOM and reapply styles after the Google Translate widget is loaded
+      const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          const translateElement = document.querySelector('#google_translate_element .goog-te-gadget');
+          if (translateElement) {
+            applyCustomStyles(); // Reapply custom styles
+          }
+        });
+      });
+
+      window.onload = function() {
+        const target = document.body;
+        observer.observe(target, {
+          childList: true,
+          subtree: true
+        });
+      };
     </script>
     </body>
 </html>
