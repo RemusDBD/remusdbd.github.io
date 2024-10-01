@@ -20,7 +20,7 @@ function changeLang(lang) {
     console.log('Switching to Chinese'); // Log specific action
     $('#title').text('Remus 雷姆');
     $('#subtitle1').text('內容創作者 (知名於黎明死線DBD教學)');
-    $('#subtitle2').text('獨立安全研究員/ 道德黑客 / CTF奪旗玩家');
+    $('#subtitle2').text('獨立安全研究員 / 道德黑客 / CTF奪旗玩家');
     $('#subtitle3').text('投機者');
     $('#aboutme-link').text(' 關於我');
     $('#writeup-link').text(' CTF解題報告');
