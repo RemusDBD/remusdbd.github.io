@@ -22,7 +22,7 @@ function changeLang(lang) {
     $('#subtitle1').text('內容創作者 (知名於黎明死線DBD教學)');
     $('#subtitle2').text('獨立安全研究員/ 道德黑客 / CTF奪旗玩家');
     $('#subtitle3').text('投機者');
-    $('#about-me-link').text(' 關於我');
+    $('#aboutme-link').text(' 關於我');
     $('#writeup-link').text(' CTF解題報告');
     
     // Hide English content and show Chinese content
