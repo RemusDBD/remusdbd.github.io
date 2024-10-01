@@ -3,13 +3,119 @@
     <clipPath id="a">
       <path fill-opacity=".7" d="M-85.3 0h682.6v512H-85.3z"/>
     </clipPath>
+    <!-- Define a single star -->
+    <g id="star">
+      <path fill="#fff" d="M0-5L1.5-1.5 5 0l-3.5 1.5L0 5l-1.5-3.5L-5 0l3.5-1.5z"/>
+    </g>
   </defs>
   <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+    <!-- Red and white stripes -->
     <g stroke-width="1pt">
-      <path fill="#006" d="M-256 0H768v512H-256z"/>
-      <path fill="#fff" d="M-256 0v57.2L653.5 512H768v-57.2L-141.5 0H-256zM768 0v57.2L-141.5 512H-256v-57.2L653.5 0H768z"/>
-      <path fill="#fff" d="M170.7 0v512h170.6V0H170.7zM-256 170.7v170.6H768V170.7H-256z"/>
-      <path fill="#c00" d="M-256 204.8v102.4H768V204.8H-256zM204.8 0v512h102.4V0H204.8zM-256 512L85.3 341.3h76.4L-179.7 512H-256zm0-512L85.3 170.7H9L-256 38.2V0zm606.4 170.7L691.7 0H768L426.7 170.7h-76.3zM768 512L426.7 341.3H503l265 132.5V512z"/>
+      <rect fill="#b22234" width="768" height="38.4"/>
+      <rect fill="#fff" width="768" height="38.4" y="38.4"/>
+      <rect fill="#b22234" width="768" height="38.4" y="76.8"/>
+      <rect fill="#fff" width="768" height="38.4" y="115.2"/>
+      <rect fill="#b22234" width="768" height="38.4" y="153.6"/>
+      <rect fill="#fff" width="768" height="38.4" y="192"/>
+      <rect fill="#b22234" width="768" height="38.4" y="230.4"/>
+      <rect fill="#fff" width="768" height="38.4" y="268.8"/>
+      <rect fill="#b22234" width="768" height="38.4" y="307.2"/>
+      <rect fill="#fff" width="768" height="38.4" y="345.6"/>
+      <rect fill="#b22234" width="768" height="38.4" y="384"/>
+      <rect fill="#fff" width="768" height="38.4" y="422.4"/>
+      <rect fill="#b22234" width="768" height="38.4" y="460.8"/>
+    </g>
+    <!-- Blue canton -->
+    <rect fill="#3c3b6e" width="300" height="230.4"/>
+    <!-- Stars pattern -->
+    <g transform="translate(30, 25)">
+      <!-- 9 rows of 5 stars -->
+      <g>
+        <use href="#star"/>
+        <use href="#star" x="60"/>
+        <use href="#star" x="120"/>
+        <use href="#star" x="180"/>
+        <use href="#star" x="240"/>
+      </g>
+      <g transform="translate(0, 40)">
+        <use href="#star"/>
+        <use href="#star" x="60"/>
+        <use href="#star" x="120"/>
+        <use href="#star" x="180"/>
+        <use href="#star" x="240"/>
+      </g>
+      <g transform="translate(0, 80)">
+        <use href="#star"/>
+        <use href="#star" x="60"/>
+        <use href="#star" x="120"/>
+        <use href="#star" x="180"/>
+        <use href="#star" x="240"/>
+      </g>
+      <g transform="translate(0, 120)">
+        <use href="#star"/>
+        <use href="#star" x="60"/>
+        <use href="#star" x="120"/>
+        <use href="#star" x="180"/>
+        <use href="#star" x="240"/>
+      </g>
+      <g transform="translate(0, 160)">
+        <use href="#star"/>
+        <use href="#star" x="60"/>
+        <use href="#star" x="120"/>
+        <use href="#star" x="180"/>
+        <use href="#star" x="240"/>
+      </g>
+    </g>
+    <g transform="translate(60, 45)">
+      <!-- 6 rows of 6 stars -->
+      <g>
+        <use href="#star"/>
+        <use href="#star" x="50"/>
+        <use href="#star" x="100"/>
+        <use href="#star" x="150"/>
+        <use href="#star" x="200"/>
+        <use href="#star" x="250"/>
+      </g>
+      <g transform="translate(0, 40)">
+        <use href="#star"/>
+        <use href="#star" x="50"/>
+        <use href="#star" x="100"/>
+        <use href="#star" x="150"/>
+        <use href="#star" x="200"/>
+        <use href="#star" x="250"/>
+      </g>
+      <g transform="translate(0, 80)">
+        <use href="#star"/>
+        <use href="#star" x="50"/>
+        <use href="#star" x="100"/>
+        <use href="#star" x="150"/>
+        <use href="#star" x="200"/>
+        <use href="#star" x="250"/>
+      </g>
+      <g transform="translate(0, 120)">
+        <use href="#star"/>
+        <use href="#star" x="50"/>
+        <use href="#star" x="100"/>
+        <use href="#star" x="150"/>
+        <use href="#star" x="200"/>
+        <use href="#star" x="250"/>
+      </g>
+      <g transform="translate(0, 160)">
+        <use href="#star"/>
+        <use href="#star" x="50"/>
+        <use href="#star" x="100"/>
+        <use href="#star" x="150"/>
+        <use href="#star" x="200"/>
+        <use href="#star" x="250"/>
+      </g>
+      <g transform="translate(0, 200)">
+        <use href="#star"/>
+        <use href="#star" x="50"/>
+        <use href="#star" x="100"/>
+        <use href="#star" x="150"/>
+        <use href="#star" x="200"/>
+        <use href="#star" x="250"/>
+      </g>
     </g>
   </g>
 </svg>
