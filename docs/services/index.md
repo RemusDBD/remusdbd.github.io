@@ -10,7 +10,7 @@ description: Remus 雷姆提供顧問服務
 
 <div class="service-cards">
     <a href="/docs/services/consulting" class="card">
-        <img src="/images/consulting-icon.svg" alt="consulting">
+        <img src="/assets/img/docs/services/consulting-icon.png" alt="consulting">
         <h5 class="title">顧問服務</h5>
         <p>提供並打造最合適你的解決方案</p>
     </a>
