@@ -24,6 +24,7 @@ notitle: "true"
     font-size: 1rem;
     margin-bottom: 0.5rem;
     display: block;
+    color: #006400; /* Dark green for readability in dark mode */
   }
 
   #fs-frm input[type="text"],
@@ -106,3 +107,5 @@ notitle: "true"
     <input class="button" value="Submit 提交" type="Submit">
   </fieldset>
 </form>
+
+
