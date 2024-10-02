@@ -1,0 +1,167 @@
+#docsContent #content a {
+  font-weight: 500; }
+
+#docsContent #content h1.mainTitle.services {
+  text-align: center;
+  margin-bottom: 80px; }
+
+#docsContent #content .service-info-blocks .card, #docsContent #content .service-cards .card {
+  color: #212529;
+  padding: 31px;
+  border: 1px solid #ebebeb; }
+
+#docsContent #content .service-info-blocks {
+  margin: 24px 0 56px; }
+  #docsContent #content .service-info-blocks .card {
+    width: 100%; }
+    #docsContent #content .service-info-blocks .card .title {
+      font-weight: 600;
+      margin: 0; }
+    #docsContent #content .service-info-blocks .card .sub-title {
+      color: #75767c; }
+    #docsContent #content .service-info-blocks .card .description {
+      margin-top: 24px; }
+    #docsContent #content .service-info-blocks .card .card-bot {
+      margin-top: 32px;
+      position: relative; }
+      #docsContent #content .service-info-blocks .card .card-bot p {
+        text-align: right;
+        line-height: 24px;
+        margin-top: 2px; }
+        #docsContent #content .service-info-blocks .card .card-bot p:after {
+          display: inline-block;
+          content: "";
+          vertical-align: middle;
+          width: 24px;
+          height: 24px;
+          margin-left: 12px; }
+        #docsContent #content .service-info-blocks .card .card-bot p.length:after {
+          background: url(/images/services/length-icon.svg); }
+        #docsContent #content .service-info-blocks .card .card-bot p.audience:after {
+          background: url(/images/services/audience-icon.svg); }
+      @media screen and (max-width: 768px) {
+        #docsContent #content .service-info-blocks .card .card-bot {
+          padding-bottom: 48px; }
+          #docsContent #content .service-info-blocks .card .card-bot p {
+            text-align: left; }
+            #docsContent #content .service-info-blocks .card .card-bot p:after {
+              content: none; }
+            #docsContent #content .service-info-blocks .card .card-bot p:before {
+              display: inline-block;
+              content: "";
+              vertical-align: middle;
+              width: 24px;
+              height: 24px;
+              margin-right: 12px; }
+            #docsContent #content .service-info-blocks .card .card-bot p.length:before {
+              background: url(/images/services/length-icon.svg); }
+            #docsContent #content .service-info-blocks .card .card-bot p.audience:before {
+              background: url(/images/services/audience-icon.svg); } }
+      #docsContent #content .service-info-blocks .card .card-bot .card-drop {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #2a7dec;
+        font-weight: 500;
+        font-size: 18px;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0; }
+        #docsContent #content .service-info-blocks .card .card-bot .card-drop:after {
+          transition: 0.3s;
+          display: inline-block;
+          content: "";
+          width: 12px;
+          height: 12px;
+          margin-left: 4px;
+          background: url(/images/pe/read-more-arrow.svg);
+          transform: rotate(90deg);
+          filter: invert(35%) sepia(96%) saturate(1837%) hue-rotate(202deg) brightness(98%) contrast(89%); }
+        #docsContent #content .service-info-blocks .card .card-bot .card-drop.opened:after {
+          transform: rotate(-90deg); }
+    #docsContent #content .service-info-blocks .card .drop-content {
+      overflow: hidden;
+      margin-top: 0;
+      opacity: 0;
+      height: 0;
+      transition: 0.3s, margin-top 0.1s 0.2s;
+      -webkit-transition: 0.3s, margin-top 0.1s 0.2s;
+      -o-transition: 0.3s, margin-top 0.1s 0.2s;
+      -moz-transition: 0.3s, margin-top 0.1s 0.2s; }
+      #docsContent #content .service-info-blocks .card .drop-content.opened {
+        margin-top: 32px;
+        transition: opacity 0.3s, height 0.3s;
+        -webkit-transition: opacity 0.3s, height 0.3s;
+        -o-transition: opacity 0.3s, height 0.3s;
+        -moz-transition: opacity 0.3s, height 0.3s;
+        opacity: 1; }
+      #docsContent #content .service-info-blocks .card .drop-content div p {
+        margin-bottom: 12px;
+        font-weight: 600; }
+      #docsContent #content .service-info-blocks .card .drop-content div li {
+        list-style: unset;
+        margin-left: 12px;
+        font-weight: 400; }
+
+#docsContent #content .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 108px; }
+  #docsContent #content .service-cards .card {
+    position: relative;
+    cursor: pointer;
+    width: calc(33.33% - 8px);
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    #docsContent #content .service-cards .card img {
+      width: 34px; }
+    #docsContent #content .service-cards .card .title {
+      font-weight: 600;
+      margin: 8px 0 14px; }
+    #docsContent #content .service-cards .card:last-child {
+      margin-right: 0; }
+    #docsContent #content .service-cards .card:hover {
+      border: 4px solid #2a7dec;
+      padding: 28px; }
+      #docsContent #content .service-cards .card:hover .title {
+        color: #2a7dec; }
+  @media screen and (max-width: 768px) {
+    #docsContent #content .service-cards {
+      flex-direction: column; }
+      #docsContent #content .service-cards .card {
+        width: 100%; } }
+
+#docsContent #content .bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 0 -50px -50%;
+  background-color: #F9FBFE;
+  width: 200%;
+  padding: 50px 0; }
+  #docsContent #content .bottom .contact-button {
+    cursor: pointer;
+    width: 350px;
+    background-color: #2A7DEC;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 16px 20px;
+    margin: 0 auto 48px;
+    box-shadow: 0 18px 16px -10px rgba(42, 125, 236, 0.25); }
+    #docsContent #content .bottom .contact-button:hover {
+      background-color: #4F97F8; }
+  #docsContent #content .bottom p {
+    color: #899AAB; }
