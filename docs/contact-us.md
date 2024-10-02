@@ -3,7 +3,7 @@ layout: common
 title: Contact us
 notitle: "true"
 ---
-<form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/manwrglz" method="post">
+<form id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/manwrglz" method="post">
   <fieldset id="fs-frm-inputs">
     <label for="full-name">稱呼 Nickname</label>
     <input type="text" name="name" id="full-name" placeholder="稱呼 Nickname" required="">
@@ -18,13 +18,10 @@ notitle: "true"
     <label for="message">Message 信息</label>
     <textarea rows="5" name="message" id="message" placeholder="輸入你的信息 Input your message here." required=""></textarea>
     <input type="block" name="_subject" id="email-subject" placeholder="輸入你的標題 Input your title here." required="">
-  <input type="submit" value="Send Message">
+    <input type="submit" value="Send Message">
             <input type="hidden" name="_next" value="/docs/contact-us-thanks">
             <input type="text" name="_gotcha" style="display:none">
-        </div>
-        <div class="submit-button-container">
-             <input class="button" value="Submit" type="submit">
-        </div>
+            <input class="button" value="Submit" type="Submit 提交">
     </fieldset>
 </form>
 
