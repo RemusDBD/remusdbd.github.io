@@ -98,9 +98,9 @@ notitle: "true"
       <option value="Service enquiry">服務查詢 Service Enquiry</option>
       <option value="Other enquiry">其他查詢 Other Enquiry</option>
     </select>
-    <label for="message">Message 信息</label>
+    <input type="block" name="_subject" id="email-subject" placeholder="輸入標題 Input title here." required="">
+    <label for="message">信息 Message</label>
     <textarea rows="5" name="message" id="message" placeholder="輸入你的信息 Input your message here." required=""></textarea>
-    <input type="block" name="_subject" id="email-subject" placeholder="輸入你的標題 Input your title here." required="">
     <input type="hidden" name="_next" value="/docs/contact-us-thanks">
     <input type="text" name="_gotcha" style="display:none">
     <input class="button" value="Submit 提交" type="Submit">
