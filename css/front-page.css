@@ -277,3 +277,5 @@ a.button:active {
             cursor: pointer;
             color: black;
         }
+
+.footer-copyright{ color: rgba(0,128,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);}
