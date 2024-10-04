@@ -55,25 +55,27 @@
                         </li>
                         <!-- Start of do not redirect -->
 <script>
-async function loadMarkdown(mdFile) {
-    try {
-        const response = await fetch(mdFile);
-        const markdown = await response.text();
+    async function loadMarkdown(mdFile) {
+        try {
+            // Fetch the markdown file content
+            const response = await fetch(mdFile);
+            const markdown = await response.text();
 
-        // Ensure marked is loaded and use it to convert markdown to HTML
-        if (typeof marked === 'function') {
-            const htmlContent = marked(markdown);
-            document.getElementById('content-section').innerHTML = htmlContent;
-        } else {
-            console.error('Marked.js is not loaded properly.');
-            document.getElementById('content-section').innerHTML = '<p>Markdown could not be processed. Marked.js not loaded.</p>';
+            // Ensure that marked.js is available and use it
+            if (typeof marked === 'function') {
+                const htmlContent = marked.parse(markdown);  // Updated syntax: marked.parse()
+                document.getElementById('content-section').innerHTML = htmlContent;
+            } else {
+                console.error('Marked.js is not loaded properly.');
+                document.getElementById('content-section').innerHTML = '<p>Markdown could not be processed. Marked.js not loaded.</p>';
+            }
+        } catch (error) {
+            console.error('Error loading markdown file:', error);
+            document.getElementById('content-section').innerHTML = '<p>Content could not be loaded.</p>';
         }
-    } catch (error) {
-        console.error('Error loading markdown file:', error);
-        document.getElementById('content-section').innerHTML = '<p>Content could not be loaded.</p>';
     }
-}
 </script>
+
 
                         <li>
                             <button id="services-butt" onclick="loadMarkdown('/docs/services')"><i class="fa fa-shop"></i> Services</button>
