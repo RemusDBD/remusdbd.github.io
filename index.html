@@ -49,12 +49,11 @@
                         </li>
                         <!-- Start of do not redirect -->
                         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-                        <div id="content-section"></div>
                         <li>
-                            <a id="services-link" class="button" onclick="loadMarkdown('/docs/services/index.md')"><i class="fa fa-shop"></i> Services</a>
+                            <button id="services-butt" onclick="loadMarkdown('/docs/services/index.md')"><i class="fa fa-shop"></i> Services</button>
                         </li>
                         <li>
-                            <a id="contactus-link" class="button" onclick="loadMarkdown('/docs/contact-us.md')"><i class="fa fa-headset"></i> Contact us</a>
+                            <button id="contactus-butt" onclick="loadMarkdown('/docs/contact-us.md')"><i class="fa fa-headset"></i> Contact us</button>
                         </li>
                         <!-- End of do not redirect -->
                     </ul>
@@ -95,5 +94,7 @@
                 </div>
             </div>
         </div>
+        <!-- Show services/contactus -->
+    <div id="content-section"></div>
     </body>
 </html>
