@@ -1,8 +1,9 @@
 ---
 layout: common
-title: Contact us
+title: Contact Us
 notitle: "true"
 ---
+
 <style>
   /* General form styling */
   #fs-frm {
@@ -107,5 +108,3 @@ notitle: "true"
     <input class="button" value="Submit 提交" type="Submit">
   </fieldset>
 </form>
-
-
