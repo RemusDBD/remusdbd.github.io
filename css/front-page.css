@@ -260,3 +260,12 @@ a.button:active {
 	z-index:10;
 	display: block;
 }
+
+/* Do not redirect */
+#content-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #333;
+  color: #48ff00;
+  border-radius: 10px;
+}
