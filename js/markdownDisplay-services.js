@@ -17,15 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
         loadContent('/docs/services', 'servicesContent'); // Load the services page
     });
 
-    // Event listener for the consulting link (inside services content)
-    document.getElementById('consulting-link').addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default behavior
-        loadContent('/docs/services/consulting', 'consultingContent'); // Load the consulting page
-    });
-
-    // Additional event listener for the contact us button in consulting content
-    document.getElementById('contactus-link').addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default behavior
-        loadContent('/docs/contact-us', 'contactusContent'); // Load the contact-us page
+    // Event delegation for dynamically loaded content
+    document.addEventListener('click', function (e) {
+        if (e.target && e.target.id === 'consulting-link') {
+            e.preventDefault(); // Prevent default behavior
+            loadContent('/docs/services/consulting', 'consultingContent'); // Load the consulting page
+        } else if (e.target && e.target.id === 'contactus-link') {
+            e.preventDefault(); // Prevent default behavior
+            loadContent('/docs/contact-us', 'contactusContent'); // Load the contact-us page
+        }
     });
 });
