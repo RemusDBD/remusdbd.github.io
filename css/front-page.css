@@ -262,10 +262,18 @@ a.button:active {
 }
 
 /* Do not redirect */
-#content-section {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #333;
-  color: #48ff00;
-  border-radius: 10px;
-}
+.markdown-content {
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #333;
+            color: #fff;
+            border-top: 1px solid #48ff00; /* Visual separation */
+        }
+
+        button {
+            background-color: #48ff00;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            color: black;
+        }
