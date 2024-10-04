@@ -48,7 +48,7 @@
                             <a id="writeup-link" class="button" href="https://remusdbd.github.io/remusctf-writeup"><i class="fa fa-file-alt"></i> Writeup</a>
                         </li>
                         <!-- Start of do not redirect -->
-                        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                        <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
                         <script>
 async function loadMarkdown(mdFile) {
     try {
@@ -67,10 +67,10 @@ async function loadMarkdown(mdFile) {
   }
 </script>
                         <li>
-                            <button id="services-butt" onclick="loadMarkdown('/docs/services')"><i class="fa fa-shop"></i> Services</button>
+                            <button id="services-butt" onclick="loadMarkdown('/docs/services/index.md')"><i class="fa fa-shop"></i> Services</button>
                         </li>
                         <li>
-                            <button id="contactus-butt" onclick="loadMarkdown('/docs/contact-us')"><i class="fa fa-headset"></i> Contact us</button>
+                            <button id="contactus-butt" onclick="loadMarkdown('/docs/contact-us.md')"><i class="fa fa-headset"></i> Contact us</button>
                         </li>
                         <!-- End of do not redirect -->
                     </ul>
