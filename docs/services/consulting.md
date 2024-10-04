@@ -48,3 +48,5 @@ Remus 雷姆相信任何教學內容應該都以「從簡」為標準，<br>
     <a id="contactus-link" class="contact-button">聯絡我們</a>
     <p>聯絡我們以往得Remus 雷姆的顧問服務</p>
 </div>
+
+<div id="consultingContent" style="display: none;"></div>
