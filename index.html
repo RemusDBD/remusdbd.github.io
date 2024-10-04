@@ -97,10 +97,13 @@
     <div id="markdownDisplay" class="markdown-content"></div>
          <script>
         document.getElementById('services-link').addEventListener('click', function() {
+             console.log('Services clicked');
             loadMarkdown('/docs/services');
+            alert('Services button clicked!');
         });
 
         document.getElementById('contactus-link').addEventListener('click', function() {
+             console.log('Contact-us clicked');
             loadMarkdown('/docs/contact-us.md);
         });
 
