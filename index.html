@@ -15,7 +15,12 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="description" content="黎明死線教學-DBD教學-電腦安全-Cybersecurity-投資-Investing"/>
         <meta name="googlebot-news" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+    if (typeof marked === 'undefined') {
+        console.error("Marked.js did not load properly.");
+    }
+</script>
     </head>
 
     <body>
@@ -55,12 +60,13 @@ async function loadMarkdown(mdFile) {
         const response = await fetch(mdFile);
         const markdown = await response.text();
 
-        // Ensure marked is defined and use it to convert markdown to HTML
+        // Ensure marked is loaded and use it to convert markdown to HTML
         if (typeof marked === 'function') {
             const htmlContent = marked(markdown);
             document.getElementById('content-section').innerHTML = htmlContent;
         } else {
-            console.error('Marked.js is not loaded.');
+            console.error('Marked.js is not loaded properly.');
+            document.getElementById('content-section').innerHTML = '<p>Markdown could not be processed. Marked.js not loaded.</p>';
         }
     } catch (error) {
         console.error('Error loading markdown file:', error);
@@ -68,6 +74,7 @@ async function loadMarkdown(mdFile) {
     }
 }
 </script>
+
                         <li>
                             <button id="services-butt" onclick="loadMarkdown('/docs/services')"><i class="fa fa-shop"></i> Services</button>
                         </li>
