@@ -48,11 +48,3 @@ Remus 雷姆相信任何教學內容應該都以「從簡」為標準，<br>
     <a id="contactus-link" class="contact-button">聯絡我們</a>
     <p>聯絡我們以往得Remus 雷姆的顧問服務</p>
 </div>
-
-<Script>
-    document.getElementById('contactus-link').addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default behavior
-        loadContent('/docs/contact-us', 'contactusContent'); // Load the contact-us page
-    });
-});
-</Script>
