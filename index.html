@@ -15,12 +15,6 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="description" content="黎明死線教學-DBD教學-電腦安全-Cybersecurity-投資-Investing"/>
         <meta name="googlebot-news" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-        <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script>
-    if (typeof marked === 'undefined') {
-        console.error("Marked.js did not load properly.");
-    }
-</script>
     </head>
 
     <body>
@@ -54,34 +48,11 @@
                             <a id="writeup-link" class="button" href="https://remusdbd.github.io/remusctf-writeup"><i class="fa fa-file-alt"></i> Writeup</a>
                         </li>
                         <!-- Start of do not redirect -->
-<script>
-    async function loadMarkdown(mdFile) {
-        try {
-            // Fetch the markdown file content
-            const response = await fetch(mdFile);
-            const markdown = await response.text();
-
-            // Ensure that marked.js is available and use it
-            if (typeof marked === 'function') {
-                const htmlContent = marked.parse(markdown);  // Updated syntax: marked.parse()
-                document.getElementById('content-section').innerHTML = htmlContent;
-            } else {
-                console.error('Marked.js is not loaded properly.');
-                document.getElementById('content-section').innerHTML = '<p>Markdown could not be processed. Marked.js not loaded.</p>';
-            }
-        } catch (error) {
-            console.error('Error loading markdown file:', error);
-            document.getElementById('content-section').innerHTML = '<p>Content could not be loaded.</p>';
-        }
-    }
-</script>
-
-
                         <li>
-                            <button id="services-butt" onclick="loadMarkdown('/docs/services')"><i class="fa fa-shop"></i> Services</button>
+                            <a id="services-link" class="button" href"/docs/services"><i class="fa fa-shop"></i> Services</a>
                         </li>
                         <li>
-                            <button id="contactus-butt" onclick="loadMarkdown('/docs/contact-us')"><i class="fa fa-headset"></i> Contact us</button>
+                            <a id="contactus-link" class="button" href"/docs/contact-us"><i class="fa fa-headset"></i> Contact us</a>
                         </li>
                         <!-- End of do not redirect -->
                     </ul>
