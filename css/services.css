@@ -1,0 +1,59 @@
+/* Service Cards */
+.service-cards {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.service-cards .card {
+    background-color: #101010;
+    border: 1px solid #48ff00;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.service-cards .card:hover {
+    transform: scale(1.05);
+}
+
+.service-cards .card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.service-cards .card .title {
+    font-size: 18px;
+    color: #48ff00;
+    margin-bottom: 10px;
+}
+
+.service-cards .card p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Contact Us Button (bottom section of consulting page) */
+.bottom .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #48ff00;
+    color: #101010;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.bottom .contact-button:hover {
+    background-color: #36cc00;
+}
+
+.bottom p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+}
