@@ -49,7 +49,23 @@
                         </li>
                         <!-- Start of do not redirect -->
                         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-                        <script type='text/javascript' src='./js/loadMarkdown.js'></script>
+                        <script>
+async function loadMarkdown(mdFile) {
+    try {
+      const response = await fetch(mdFile);
+      const markdown = await response.text();
+
+      // Convert the Markdown to HTML
+      const htmlContent = marked(markdown);
+
+      // Inject the HTML content into the div
+      document.getElementById('content-section').innerHTML = htmlContent;
+    } catch (error) {
+      console.error('Error loading markdown file:', error);
+      document.getElementById('content-section').innerHTML = '<p>Content could not be loaded.</p>';
+    }
+  }
+</script>
                         <li>
                             <button id="services-butt" onclick="loadMarkdown('/docs/services')"><i class="fa fa-shop"></i> Services</button>
                         </li>
