@@ -277,3 +277,10 @@ a.button:active {
             cursor: pointer;
             color: black;
         }
+
+.footer-copyright{
+    font-family: 'NEXTSTEP';
+    text-align: left;
+    color: #1e6901;
+}
+	
