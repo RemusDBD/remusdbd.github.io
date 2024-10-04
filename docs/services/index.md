@@ -15,10 +15,3 @@ description: Remus 雷姆提供顧問服務
         <p>提供並打造最合適你的解決方案</p>
     </a>
 </div>
-
-<script>
-    document.getElementById('consulting-link').addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default behavior
-        loadContent('/docs/services/consulting', 'consultingContent'); // Load the consulting page
-    });
-</script>
