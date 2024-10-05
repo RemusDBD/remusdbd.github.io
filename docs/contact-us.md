@@ -21,23 +21,6 @@ notitle: "true"
     <textarea rows="5" name="message" id="message" placeholder="輸入你的信息 Input your message here." required=""></textarea>
     <input type="hidden" name="_next" value="/docs/contact-us-thanks">
     <input type="text" name="_gotcha" style="display:none">
-    <div class="g-recaptcha" data-sitekey="6LdcxVgqAAAAAEGS19jcT7HqJMFQOPIXV7fTLst0"></div>
-    <script>window.onload = function() { 
-  var el = document.getElementById('g-recaptcha-response'); 
-  if (el) { 
-    el.setAttribute('required', 'required'); 
-  } 
-}</script>
-    <Style>
-      #g-recaptcha-response {
-display: block !important;
-position: absolute;
-margin: -50px 0 0 0 !important;
-z-index: -999999;
-opacity: 0;
-}
-    </Style>
-    <br/>
     <input class="button" value="Submit 提交" type="Submit">
   </fieldset>
 </form>
