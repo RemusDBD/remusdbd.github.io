@@ -21,6 +21,8 @@ notitle: "true"
     <textarea rows="5" name="message" id="message" placeholder="輸入你的信息 Input your message here." required=""></textarea>
     <input type="hidden" name="_next" value="/docs/contact-us-thanks">
     <input type="text" name="_gotcha" style="display:none">
+    <div class="g-recaptcha" data-sitekey="6LdcxVgqAAAAAEGS19jcT7HqJMFQOPIXV7fTLst0"></div>
+    <br/>
     <input class="button" value="Submit 提交" type="Submit">
   </fieldset>
 </form>
