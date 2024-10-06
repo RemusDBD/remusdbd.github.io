@@ -3,6 +3,6 @@
 User-agent: *
 Disallow:
 
-Sitemap: remusdbd.github.io/sitemap.xml
+Sitemap: https://remusdbd.github.io/sitemap.xml
 # ------------------------------------------
 # End of RemusDBD.github.io robots.txt
