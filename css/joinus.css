@@ -1,0 +1,93 @@
+/* Joinus Cards */
+.joinus-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    margin: 30px 0;
+}
+
+.joinus-cards .card {
+    background-color: #101010;
+    border: 1px solid #48ff00;
+    padding: 20px;
+    margin: 10px; /* Set margin for consistent spacing */
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.joinus-cards .card:hover {
+    transform: scale(1.05);
+}
+
+.joinus-cards .card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.joinus-cards .card .title {
+    font-size: 18px;
+    color: #48ff00;
+    margin-bottom: 10px;
+    border: 2px solid #48ff00; /* Border around the title */
+    padding: 10px; /* Add some padding inside the border */
+}
+
+/* Description Styling */
+.card .description {
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #48ff00; /* Border around the description */
+    padding: 10px; /* Add padding to space out text from the border */
+    margin-top: 10px; /* Space between title and description */
+    text-align: center; /* Center-align the description text */
+}
+
+.joinus-cards .card p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Centering Main Title */
+.mainTitle {
+    text-align: center;
+    color: #48ff00; /* Make sure it matches your theme */
+    margin-top: 40px; /* Adjust as needed for spacing */
+}
+
+/* Contact Us Button (bottom section of consulting page) */
+.bottom {
+    text-align: center; /* Center content in the bottom section */
+    margin-top: 30px;
+}
+
+.bottom .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #48ff00;
+    color: #101010;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.bottom .contact-button:hover {
+    background-color: #36cc00;
+}
+
+.bottom p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center; /* Center the contact text */
+}
+
+.joinus-info-blocks .card .title {
+    font-size: 18px;
+    color: #48ff00;
+    margin-bottom: 10px;
+    border: 2px solid #48ff00; /* Border around the title */
+    padding: 10px; /* Add some padding inside the border */
+    text-align: center; /* Center the contact text */
+}
