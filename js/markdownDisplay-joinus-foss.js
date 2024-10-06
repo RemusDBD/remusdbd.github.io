@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listener for the services link
     document.getElementById('joinus-link').addEventListener('click', function (e) {
         e.preventDefault(); // Prevent default behavior
-        loadContent('/docs/services', 'joinusContent'); // Load the services page
+        loadContent('/docs/joinus', 'joinusContent'); // Load the services page
     });
 
     // Event delegation for dynamically loaded content
     document.addEventListener('click', function (e) {
         if (e.target && e.target.id === 'foss-link') {
             e.preventDefault(); // Prevent default behavior
-            loadContent('/docs/services/website-developer', 'fossContent'); // Load the foss page
+            loadContent('/docs/joinus/website-developer', 'fossContent'); // Load the foss page
         } else if (e.target && e.target.id === 'contactus-link') {
             e.preventDefault(); // Prevent default behavior
             loadContent('/docs/contact-us', 'contactusContent'); // Load the contact-us page
