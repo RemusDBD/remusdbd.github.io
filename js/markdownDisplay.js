@@ -6,6 +6,10 @@
             loadMarkdown('/docs/contact-us');
         });
 
+        document.getElementById('joinus-link').addEventListener('click', function() {
+            loadMarkdown('/docs/joinus');
+        });
+
         function loadMarkdown(file) {
             fetch(file)
                 .then(response => response.text())
