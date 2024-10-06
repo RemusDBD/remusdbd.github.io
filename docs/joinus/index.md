@@ -15,4 +15,4 @@ description: 加入我們
     </a>
 </div>
 
-<div id="joinusContent" style="display: none;"></div>
+<div id="fossContent" style="display: none;"></div>
