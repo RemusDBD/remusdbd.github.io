@@ -25,6 +25,7 @@ function changeLang(lang) {
     $('#aboutme-link').text('關於我');
     $('#writeup-link').text('CTF解題報告');
     $('#services-link').text('服務');
+    $('#joinus-link').text('加入我們');
     $('#contactus-link').text('聯絡我們');
     
     // Hide English content and show Chinese content
@@ -42,7 +43,8 @@ function changeLang(lang) {
     $('#aboutme-link').text(' About Me');
     $('#writeup-link').text(' Writeup');
     $('#services-link').text(' Services');
-    $('#contactus-link').text(' Contact us');
+    $('#joinus-link').text(' Join Us');
+    $('#contactus-link').text(' Contact Us');
     
     // Hide Chinese content and show English content
     $('.en').each(function () {
