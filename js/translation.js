@@ -24,6 +24,7 @@ function changeLang(lang) {
     $('#subtitle3').text('投機者');
     $('#aboutme-link').text('關於我');
     $('#writeup-link').text('CTF解題報告');
+    $('#tools-link').text('工具');
     $('#services-link').text('服務');
     $('#joinus-link').text('加入我們');
     $('#contactus-link').text('聯絡我們');
@@ -42,6 +43,7 @@ function changeLang(lang) {
     $('#subtitle3').text('Speculator');
     $('#aboutme-link').text(' About Me');
     $('#writeup-link').text(' Writeup');
+    $('#tools-link').text('Tools');
     $('#services-link').text(' Services');
     $('#joinus-link').text(' Join Us');
     $('#contactus-link').text(' Contact Us');
