@@ -1,0 +1,244 @@
+/********************************************************************************/
+/*							Cosmetics & DIV Tables								*/
+/********************************************************************************/
+.disabledPiece{
+	opacity: 0.23;
+}
+.fakeLink{
+	color: var(--theme-link-color);
+    text-decoration: none;
+    transition: color .3s;
+}
+.fakeLink:hover{
+	text-decoration: underline;
+	color: var(--theme-link-color--hover);
+	cursor: pointer;
+}
+:root{
+	--thumbnailSize: 256px;
+	--pieceHeight: var(--thumbnailSize); /*it's just because of better naming for certain situation*/
+	--pieceImageSize: calc(0.9 * var(--thumbnailSize));
+	--headerHeight: 35.4px;
+	--bgColor: rgb(11, 11, 11);
+	--dividerHeight: 5px;
+}
+.displayFlex{
+	display: flex;
+}
+.displayInlineFlex{
+	display: inline-flex;
+}
+.flexCenter{
+	align-items: center;
+    justify-content: center;
+}
+.flexMiddle{
+	flex-wrap: wrap;
+	align-content: center;
+}
+.flexRight{
+	justify-content: flex-end;
+}
+.flexColumn{
+	flex-direction: column;
+}
+.flexRowReverse{
+	flex-direction: row-reverse;
+}
+.flexStretch{
+	align-items: stretch;
+}
+.flexCenterItems{
+	align-items: center;
+}
+.flexGrow{
+	flex-grow: 1;
+}
+
+.divTable{
+	box-shadow: 0 0 5px 0 #000000;
+	font-size: 13px;
+	background: var(--bgColor);
+}
+
+.cosmeticTable{
+	height: calc(1 * var(--pieceHeight) + 2 * var(--headerHeight)); /*583px;*/ /*327 collapse => 35.5px headers, 256px outfit, 35.5px Exapnd Footer */
+	position: relative;
+	/*align-items: center;*/
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    border-top: var(--dividerHeight) solid #222;
+}
+.cosmeticTable.fakeOutfit{
+	height: var(--pieceHeight); /*No horizontal header nor "expanding" footer*/ /*256px*/
+}
+.cosmeticTable div, .divTable div:not(.game-element-container div){ /*:not(.game-element-container div) avoiding of collision with animated background from assembleImage*/
+	/*set default bacgrkound color*/
+	background: var(--bgColor);
+}
+
+.outfitView{
+	z-index: 10;
+}
+
+.divTableCell{
+	color: #aaa9a9;
+}
+.divTableCell, .divTableHeader, .cellHeader {
+	padding: 4pt 8pt;
+	border: 1px solid #1f1f1f;
+}
+.divTableCell.textCell {
+    padding-top: 10pt;
+}
+.divTableHeader, .cellHeader{
+	text-align: center;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #1f1f1f;
+}
+.divTableHeader{
+    background: #000000 url(https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/05/Tbl-bg.jpg) left !important;
+    background-size: cover !important;
+    box-shadow: rgb(0 0 0 / 80%) 0px 0px 8px 0px inset;
+}
+
+.cosmeticTable div,
+.tomeWrapper div,
+.dlcCategoryWrapper
+/*.cosmeticHeader div*/ {
+    /*flex: 1;*/
+    width: 100%;
+}
+
+.cosmeticHeader{
+}
+.cosmeticPiece{
+}
+
+.cosmeticThumbnail, .pieceThumbnail {
+    max-width: var(--thumbnailSize);
+    max-height: var(--thumbnailSize);
+    min-width: var(--thumbnailSize);
+}
+
+.pieceThumbnail{
+	position: relative;
+}
+.pieceThumbnail{
+	width: var(--thumbnailSize);
+    height: var(--thumbnailSize);
+}
+.pieceThumbnail img{
+	width: var(--pieceImageSize);
+	height: var(--pieceImageSize);
+}
+
+.linkedIcon{
+	position: absolute;
+    background: transparent !important;
+    display: flex;
+    top: 18px;
+    right: 21px;
+    justify-content: flex-end;
+}
+.linkedIcon img{
+    width: 42px;
+    height: 40px;
+}
+
+.ccyPrice{
+	max-width: calc(var(--thumbnailSize) / 2);
+    height: calc(var(--thumbnailSize) / 2);
+    font-size: 17px;
+}
+
+.cosmeticPrice, .priceContainer {
+    max-width: calc(var(--thumbnailSize) / 2);
+}
+
+/* Outfit Piece/Row */
+.cosmeticPiece .pieceThumbnail.SquareBG-1-enh::before,
+.cosmeticPiece .pieceThumbnail.SquareBG-2-enh::before,
+.cosmeticPiece .pieceThumbnail.SquareBG-3-enh::before,
+.cosmeticPiece .pieceThumbnail.SquareBG-4-enh::before, 
+.cosmeticPiece .pieceThumbnail.SquareBG-5-enh::before,
+.cosmeticPiece .pieceThumbnail.SquareBG-6-enh::before,
+.cosmeticPiece .pieceThumbnail.SquareBG-7-enh::before,
+.cosmeticPiece .pieceThumbnail.SquareBG-8-enh::before,
+.cosmeticPiece .pieceThumbnail.SquareBG-9-enh::before{
+    content: "";
+    background: inherit;
+    /*background-size: 104% 102%;*/
+    background-position: center center;
+    filter: brightness(125%) saturate(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Individual Piece/Row*/
+.expandedPiece .pieceThumbnail.SquareBG-1-enh::before,
+.expandedPiece .pieceThumbnail.SquareBG-2-enh::before,
+.expandedPiece .pieceThumbnail.SquareBG-3-enh::before,
+.expandedPiece .pieceThumbnail.SquareBG-4-enh::before,
+.expandedPiece .pieceThumbnail.SquareBG-5-enh::before,
+.expandedPiece .pieceThumbnail.SquareBG-6-enh::before,
+.expandedPiece .pieceThumbnail.SquareBG-7-enh::before,
+.expandedPiece .pieceThumbnail.SquareBG-8-enh::before,
+.expandedPiece .pieceThumbnail.SquareBG-9-enh::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(90%) saturate(95%);
+}
+/********************************/
+/* Underlying pieces of outfit */
+/********************************/
+
+.expandablePart{
+	padding-left: 70px;
+	position: absolute;
+    z-index: 1;
+    bottom: 0; /*When expanded*/
+	transition: all 0.3s ease 0s;
+}
+
+.bodyPartHeader img {
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.pieceDetailsValues {
+	text-align: center;
+}
+
+.outfitPieces, .cosmeticPieces{
+	max-width: 230px;
+}
+
+.pieceDescValue{
+	flex: 1; /*in order to stretch the container*/
+}
+
+.pieceHeaders{
+	max-width: 250px;
+}
+.pieceDetail{
+	flex: 1;
+}
+/*Tomes Styles*/
+.tomeWrapper.blankSpace{
+	width: 100% !important;
+}
+.tomeImg{
+	height: 100%;
+	max-height: 230px;
+}
