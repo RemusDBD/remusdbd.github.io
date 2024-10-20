@@ -17,14 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
         loadContent('/docs/tools', 'toolsContent'); // Load the tools page
     });
 
-    // Event delegation for dynamically loaded content
-    document.addEventListener('click', function (e) {
-        if (e.target && e.target.id === 'tools-link') {
-            e.preventDefault(); // Prevent default behavior
-            loadContent('/docs/tools/', 'toolsContent'); // Load the tools page
-        } else if (e.target && e.target.id === 'contactus-link') {
-            e.preventDefault(); // Prevent default behavior
-            loadContent('/docs/contact-us', 'contactusContent'); // Load the contact-us page
-        }
-    });
+// Event delegation for dynamically loaded content
+document.addEventListener('click', function (e) {
+    if (e.target && e.target.id === 'tools-link') {
+        e.preventDefault(); // Prevent default behavior
+        window.location.href = '/docs/tools/tools.html'; // Redirect to tools page
+    } else if (e.target && e.target.id === 'contactus-link') {
+        e.preventDefault(); // Prevent default behavior
+        window.location.href = '/docs/contact-us'; // Redirect to contact-us page
+    }
 });
