@@ -1,3 +1,7 @@
+        document.getElementById('tools-link').addEventListener('click', function() {
+            loadMarkdown('/docs/tools');
+        });
+
         document.getElementById('services-link').addEventListener('click', function() {
             loadMarkdown('/docs/services');
         });
