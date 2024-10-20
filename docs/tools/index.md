@@ -10,7 +10,7 @@ description: Remus 雷姆提供的工具
 
 <div class="tools-cards">
     <a id= "tools-link" class="card">
-        <img src="/assets/img/docs/tools/tools-icon.png" alt="tools">
+        <img src="/assets/img/docs/tools/tools-icon.webp" alt="tools">
         <h3 class="title">黎明死線DBD聖所</h3>
         <p>每周聖所技能</p>
     </a>
