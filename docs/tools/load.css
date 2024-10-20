@@ -1,5 +1,5 @@
-@import url(/MediaWiki:CosmeticsTables.css?action=raw&ctype=text/css);
-@import url(/MediaWiki:Base64Files.css?action=raw&ctype=text/css);
+@import url(./MediaWiki:CosmeticsTables.css?action=raw&ctype=text/css);
+@import url(./MediaWiki:Base64Files.css?action=raw&ctype=text/css);
 
 :root {
 	--fandom-global-nav-background-color: #1e0c1b;
