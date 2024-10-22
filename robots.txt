@@ -4,5 +4,6 @@ User-agent: *
 Disallow:
 
 Sitemap: https://remusdbd.github.io/sitemap.xml
+crawl-delay: 10 
 # ------------------------------------------
 # End of RemusDBD.github.io robots.txt
