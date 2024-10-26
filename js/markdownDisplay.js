@@ -2,6 +2,10 @@
             loadMarkdown('/docs/tools');
         });
 
+        document.getElementById('invest-link').addEventListener('click', function() {
+            loadMarkdown('/docs/invest');
+        });
+
         document.getElementById('services-link').addEventListener('click', function() {
             loadMarkdown('/docs/services');
         });
