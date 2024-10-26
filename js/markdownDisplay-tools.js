@@ -25,5 +25,5 @@ document.addEventListener('click', function (e) {
     } else if (e.target && e.target.id === 'contactus-link') {
         e.preventDefault(); // Prevent default behavior
         window.location.href = '/docs/contact-us'; // Redirect to contact-us page
-    }
+    });
 });
