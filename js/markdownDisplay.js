@@ -2,9 +2,9 @@
             loadMarkdown('/docs/tools');
         });
 
-      /*  document.getElementById('invest-link').addEventListener('click', function() {
+        document.getElementById('invest-link').addEventListener('click', function() {
             loadMarkdown('/docs/invest');
-        }); */ //2024/10/29 duplicated?
+        }); 
 
         document.getElementById('services-link').addEventListener('click', function() {
             loadMarkdown('/docs/services');
