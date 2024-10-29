@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listener for the invest link
     document.getElementById('invest-link').addEventListener('click', function (e) {
         e.preventDefault(); // Prevent default behavior
-        loadContent('/docs/invest', 'investContent'); // Load the invest page
+      //  loadContent('/docs/invest', 'investContent'); // Load the invest page //2024/10/29
+             //<!-- duplicated -->//
     });
 
 // Event delegation for dynamically loaded content
