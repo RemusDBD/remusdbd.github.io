@@ -22,12 +22,13 @@ document.addEventListener('click', function (e) {
     if (e.target && e.target.id === 'invest-link') {
         e.preventDefault(); // Prevent default behavior
               //  window.location.href = '/docs/invest/invest.html'; // Redirect to invest page // 2024/10/29
-                // no more redirect //
-            loadContent('/docs/invest/', 'investContent'); // Load the invest page
+                //<!-- no more redirect -->//
+           // loadContent('/docs/invest/', 'investContent'); // Load the invest page // 2024/10/29
+                //<!-- duplicated -->//
     } else if (e.target && e.target.id === 'contactus-link') {
         e.preventDefault(); // Prevent default behavior
       //  window.location.href = '/docs/contact-us'; // Redirect to contact-us page // 2024/10/29
-        // no more redirect //
+        //<!-- no more redirect -->//
             loadContent('/docs/contact-us', 'contactusContent'); // Load the contact-us page
         }
     });
