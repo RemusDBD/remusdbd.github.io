@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 document.getElementById(targetDiv).innerHTML = data;
                 document.getElementById(targetDiv).style.display = 'block';
-                document.getElementById('markdownDisplay_invest').style.display = 'none'; // Hide main content
+               // document.getElementById('markdownDisplay_invest').style.display = 'none'; // Hide main content // 2024/10/29
+                 //<!-- duplicated -->//
             })
             .catch(error => console.error('Error loading content:', error));
     }
