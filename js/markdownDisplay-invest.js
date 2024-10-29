@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(error => console.error('Error loading content:', error));
     }
 
-    // Event listener for the services link
+    // Event listener for the invest link
     document.getElementById('invest-link').addEventListener('click', function (e) {
         e.preventDefault(); // Prevent default behavior
         loadContent('/docs/invest', 'investContent'); // Load the invest page
@@ -21,10 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('click', function (e) {
     if (e.target && e.target.id === 'invest-link') {
         e.preventDefault(); // Prevent default behavior
-        window.location.href = '/docs/invest/invest.html'; // Redirect to invest page
+              //  window.location.href = '/docs/invest/invest.html'; // Redirect to invest page // 2024/10/29
+                // no more redirect //
+            loadContent('/docs/invest/', 'investContent'); // Load the invest page
     } else if (e.target && e.target.id === 'contactus-link') {
         e.preventDefault(); // Prevent default behavior
-        window.location.href = '/docs/contact-us'; // Redirect to contact-us page
+      //  window.location.href = '/docs/contact-us'; // Redirect to contact-us page // 2024/10/29
+        // no more redirect //
+            loadContent('/docs/contact-us', 'contactusContent'); // Load the contact-us page
         }
     });
 });
