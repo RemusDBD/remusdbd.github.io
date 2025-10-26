@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Event listener for the contact-us link
-    document.getElementById('contact-us-link').addEventListener('click', function (e) {
+    document.getElementById('contactus-link').addEventListener('click', function (e) {
         e.preventDefault(); // Prevent default behavior
         loadContent('/docs/contact-us', 'contactusContent'); // Load the contact-us page
     });
