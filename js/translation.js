@@ -19,10 +19,10 @@ function changeLang(lang) {
   if (lang === 'cn') {
     console.log('Switching to Chinese'); // Log specific action
     $('#title').text('Remus 雷姆');
-    $('#subtitle1').text('內容創作者 (知名於黎明死線DBD教學)');
-    $('#subtitle2').text('獨立安全研究員 / 道德黑客 / CTF奪旗玩家');
-    $('#subtitle3').text('投機者');
-    $('#subtitle4').text('占星師');
+    $('#subtitle1').text('你喜歡改革嗎? 你應該要加入我');
+    $('#subtitle2').text('「尋根，讓財富像流水一樣」');
+    //$('#subtitle3').text('投機者');
+    //$('#subtitle4').text('占星師');
     $('#aboutme-link').text('關於我');
     $('#writeup-link').text('CTF解題報告');
     $('#tools-link').text('工具');
@@ -40,10 +40,10 @@ function changeLang(lang) {
   } else if (lang === 'us') {
     console.log('Switching to English'); // Log specific action
     $('#title').text('Remus');
-    $('#subtitle1').text('Content Creator');
-    $('#subtitle2').text('Independent Security Researcher / Ethical Hacker / CTF Player');
-    $('#subtitle3').text('Speculator');
-    $('#subtitle4').text('Astrologer');
+    $('#subtitle1').text('You like revolution? You should join me.');
+    $('#subtitle2').text('"Turning source into wealth — so it flows"');
+    //$('#subtitle3').text('Speculator');
+    //$('#subtitle4').text('Astrologer');
     $('#aboutme-link').text(' About Me');
     $('#writeup-link').text(' Writeup');
     $('#tools-link').text('Tools');
