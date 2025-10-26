@@ -34,7 +34,7 @@ function changeLang(lang) {
     $('#title').text('"Turning source into wealth — so it flows"');
     $('#subtitle1').text('You do care about people?');
     $('#subtitle2').text('You do want to revolutionise finance?');
-    $('#contactus-link').text(' Contact Us');
+    $('#contactus-link').text(' Contact me');
     
     // Hide Chinese content and show English content
     $('.en').each(function () {
