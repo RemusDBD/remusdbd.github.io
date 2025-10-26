@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 document.getElementById(targetDiv).innerHTML = data;
                 document.getElementById(targetDiv).style.display = 'block';
-                document.getElementById('markdownDisplay_foss').style.display = 'none'; // Hide main content
+                document.getElementById('markdownDisplay_contactus').style.display = 'none'; // Hide main content
             })
             .catch(error => console.error('Error loading content:', error));
     }
