@@ -19,9 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Event delegation for dynamically loaded content
     document.addEventListener('click', function (e) {
-      (e.target && e.target.id === 'contactus-link') {
+      (e.target && e.target.id === 'contactus-link') 
             e.preventDefault(); // Prevent default behavior
             loadContent('/docs/contact-us', 'contactusContent'); // Load the contact-us page
-        }
     });
 });
