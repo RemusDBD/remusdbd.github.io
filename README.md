@@ -6,6 +6,7 @@ Welcome for any contribution. Waiting for your pull request.<br>
 
 <歡迎中文貢獻><br>
 - 對於[聖所](https://remusdbd.github.io/docs/tools/tools.html) <br>
+! [Wiki page](https://deadbydaylight.fandom.com/wiki/Shrine_of_Secrets) no longer updated, will start another update soon. (Note : 2025/10/26) <br>
   - 暫時此頁面為 static page<br>
   - 原設的 wikia.php 跟 load.php 被我轉成為 .css<br>
   - html 裡的 loading="lazy" 的元素也被我移走<br>
