@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | RemusDBD</title>
+  <meta name="description" content="Notes, ideas, projects and writing by RemusDBD.">
+  <link rel="canonical" href="https://remusdbd.github.io/blog/">
+  <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">RemusDBD<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/blog/" aria-current="page">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Writing & ideas</p>
+      <h1>Blog</h1>
+      <p class="intro">Notes on finance, technology, open source, experiments and things worth thinking about.</p>
+    </section>
+
+    <section class="toolbar" aria-label="Filter posts">
+      <label class="search">
+        <span class="sr-only">Search posts</span>
+        <input id="search" type="search" placeholder="Search posts…" autocomplete="off">
+      </label>
+      <div id="tags" class="tags" aria-label="Filter by topic"></div>
+    </section>
+
+    <section id="posts" class="posts" aria-live="polite"></section>
+    <p id="empty" class="empty" hidden>No posts match your search.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="/">← Back to RemusDBD</a>
+      <span>© 2026 RemusDBD</span>
+    </div>
+  </footer>
+
+  <script src="/blog/posts.js"></script>
+  <script src="/blog/blog.js"></script>
+</body>
+</html>
