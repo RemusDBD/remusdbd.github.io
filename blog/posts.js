@@ -7,6 +7,14 @@
 
 window.BLOG_POSTS = [
   {
+    title: "什麼是架構?",
+    date: "2024-09-30",
+    tags: ["哲學"],
+    excerpt: "",
+    url: "/blog/what-is-the-framework/",
+    readingTime: "18 min read"
+  },
+  {
     title: "怎樣成為 Juker",
     date: "2024-09-28",
     tags: ["黎明死線"],
