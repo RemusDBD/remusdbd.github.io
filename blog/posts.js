@@ -15,6 +15,14 @@ window.BLOG_POSTS = [
     readingTime: "12 min read"
   },
   {
+    title: "Juking Mindset",
+    date: "2024-09-26",
+    tags: ["黎明死線"],
+    excerpt: "",
+    url: "/blog/juking-mindset/",
+    readingTime: "12 min read"
+  },
+  {
     title: "不要願地踏步",
     date: "2024-09-25",
     tags: ["黎明死線"],
