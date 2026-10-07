@@ -4,16 +4,6 @@
 // Each post needs:
 //   title, date (YYYY-MM-DD), excerpt, url
 // tags and readingTime are optional.
-//
-// Example:
-// {
-//   title: "My next post",
-//   date: "2026-10-08",
-//   tags: ["Finance", "Technology"],
-//   excerpt: "A short description shown on the blog index.",
-//   url: "/blog/my-next-post/",
-//   readingTime: "5 min read"
-// }
 
 window.BLOG_POSTS = [
   {
@@ -31,5 +21,13 @@ window.BLOG_POSTS = [
     excerpt: "對於 Remus雷姆 改檔事件，請查閱本文。",
     url: "/blog/red-light-event/",
     readingTime: "15 min read"
+  },
+  {
+    title: "激勵教學 只是個包裝而已 我花了幾年時間去沉澱出來...",
+    date: "2024-09-24",
+    tags: ["個人觀點", "教學", "人生"],
+    excerpt: "",
+    url: "/blog/motivational-tutorials-are-just-a-wrapper/",
+    readingTime: "10 min read"
   }
 ];
