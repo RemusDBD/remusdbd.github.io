@@ -7,6 +7,14 @@
 
 window.BLOG_POSTS = [
   {
+    title: "脫離「住屋陷阱」",
+    date: "2024-09-26",
+    tags: ["住屋", "投資", "樓市", "生活"],
+    excerpt: "",
+    url: "/blog/escape-the-housing-trap/",
+    readingTime: "12 min read"
+  },
+  {
     title: "不要願地踏步",
     date: "2024-09-25",
     tags: ["黎明死線"],
