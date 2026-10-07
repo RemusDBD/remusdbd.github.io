@@ -25,7 +25,7 @@ window.BLOG_POSTS = [
   {
     title: "激勵教學 只是個包裝而已 我花了幾年時間去沉澱出來...",
     date: "2024-09-24",
-    tags: ["個人觀點", "教學", "人生"],
+    tags: ["黎明死線"],
     excerpt: "",
     url: "/blog/motivational-tutorials-are-just-a-wrapper/",
     readingTime: "10 min read"
