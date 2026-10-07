@@ -7,6 +7,14 @@
 
 window.BLOG_POSTS = [
   {
+    title: "怎樣成為 Juker",
+    date: "2024-09-28",
+    tags: ["黎明死線"],
+    excerpt: "",
+    url: "/blog/how-to-become-a-juker/",
+    readingTime: "10 min read"
+  },
+  {
     title: "脫離「住屋陷阱」",
     date: "2024-09-26",
     tags: ["住屋", "投資", "樓市", "生活"],
