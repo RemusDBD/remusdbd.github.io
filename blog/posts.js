@@ -7,7 +7,7 @@
 
 window.BLOG_POSTS = [
   {
-    title: "遇溺缺的是 AI 還是 一條通 泳池帝國 的路??",
+    title: "遇溺缺的是 AI 還是一條通 泳池帝國 的路?",
     date: "2026-10-13",
     tags: ["人工智能"],
     excerpt: "",
