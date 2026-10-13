@@ -7,6 +7,14 @@
 
 window.BLOG_POSTS = [
   {
+    title: "遇溺缺的是 AI 還是 一條通 泳池帝國 的路??",
+    date: "2026-10-13",
+    tags: ["人工智能"],
+    excerpt: "",
+    url: "/blog/drowning-ai-or-pool-empire/",
+    readingTime: "15 min read"
+  },
+  {
     title: "什麼是架構?",
     date: "2024-09-30",
     tags: ["哲學"],
