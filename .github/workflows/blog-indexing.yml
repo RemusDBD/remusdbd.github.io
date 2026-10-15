@@ -1,0 +1,83 @@
+name: Blog sitemap and search indexing
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "blog/**/*.html"
+      - "blog/*.html"
+      - "scripts/generate_sitemap.py"
+      - "scripts/notify_indexnow.py"
+      - ".github/workflows/blog-indexing.yml"
+      - "sitemap.xml"
+  schedule:
+    - cron: "23 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blog-indexing-main
+  cancel-in-progress: false
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Determine changed blog pages
+        id: changed
+        if: github.event_name == 'push'
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            blog/**/*.html
+            blog/*.html
+          separator: "\n"
+
+      - name: Generate sitemap
+        run: python scripts/generate_sitemap.py
+
+      - name: Commit sitemap if changed
+        id: sitemap
+        run: |
+          if git diff --quiet -- sitemap.xml; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Sitemap is already up to date."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add sitemap.xml
+            git commit -m "chore: refresh blog sitemap"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Save changed blog file list
+        if: github.event_name == 'push' && steps.changed.outputs.any_changed == 'true'
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: |
+          printf '%s\n' "$ALL_CHANGED_FILES" > changed-blog-files.txt
+          cat changed-blog-files.txt
+
+      - name: Notify IndexNow about changed blog pages
+        if: github.event_name == 'push' && steps.changed.outputs.any_changed == 'true'
+        env:
+          CHANGED_FILES_FILE: changed-blog-files.txt
+        run: python scripts/notify_indexnow.py
+
+      - name: Report scheduled/manual refresh
+        if: github.event_name != 'push'
+        run: echo "Sitemap refresh completed. Scheduled/manual runs do not send per-page IndexNow notifications."
