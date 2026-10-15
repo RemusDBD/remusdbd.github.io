@@ -62,18 +62,9 @@ def main():
         if path == "/blog" or path == "/blog/" or path.startswith("/blog/"):
             root.remove(entry)
 
-    candidates = []
-    landing = BLOG_DIR / "index.html"
-    if landing.is_file():
-        candidates.append(landing)
-    candidates.extend(
-        path for path in sorted(BLOG_DIR.glob("*/index.html"))
-        if path != landing
-    )
-    candidates.extend(
-        path for path in sorted(BLOG_DIR.glob("*/*/index.html"))
-        if path not in candidates
-    )
+    # Recurse so future posts work even if they are nested in subdirectories.
+    candidates = sorted(BLOG_DIR.rglob("index.html"))
+
 
     urls = sorted({url for path in candidates if (url := canonical_url(path))})
     for url in urls:
