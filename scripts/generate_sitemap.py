@@ -45,27 +45,7 @@ def canonical_url(path: Path):
     return url
 
 
-def _bootstrap_hero_media() -> bool:
-    """Decode staged hero media when a staging trigger is present.
-
-    The one-shot helper lives in scripts/materialize_hero_media.py and is
-    removed again by itself once it has published the real media files.
-    """
-    try:
-        from materialize_hero_media import bootstrap_hero_media
-    except Exception:
-        return False
-    try:
-        return bool(bootstrap_hero_media())
-    except Exception as exc:
-        print(f"hero media bootstrap skipped: {exc}")
-        return False
-
-
 def main():
-    if _bootstrap_hero_media():
-        return
-
     if not SITEMAP_PATH.exists():
         raise SystemExit("sitemap.xml is missing; refusing to create a partial site map.")
 
