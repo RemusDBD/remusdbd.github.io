@@ -28,7 +28,12 @@
     </head>
 
     <body>
-        
+
+        <!-- Looping background video for the hero -->
+        <video id="bg-video" class="bg-video" autoplay muted loop playsinline preload="auto"
+               poster="assets/img/hero-poster.jpg" aria-hidden="true" tabindex="-1"></video>
+        <div class="bg-scrim" aria-hidden="true"></div>
+
         <!-- Start of Translation -->
       <div class='pullDownSelector' id='language'>
         <a class='item' onclick='changeLang("us")' style='background:url("./assets/img/flag/us.svg");'></a>
@@ -37,61 +42,60 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script type='text/javascript' src='./js/translation.js'></script>
         <!-- End of Translation -->
-        
+
         <div class="slide-container">
             <div class="slide">
-                <div class="avatar-container">
-                    <img src="assets/avatar.webp" alt="RemusDBD">
-                </div>
                 <div class="title-container">
                     <h2 id="title">"Turning source into wealth — so it flows"</h2>
                     <h3 id="subtitle1">You do care about people?</h3>
                     <h3 id="subtitle2">You do want to revolutionise finance?</h3>
                 </div>
-                <div class="links-container links-container-main">
-                    <ul>
-                        <li>
-                            <a href="./blog/" class="button"> Blog</a>
-                        </li>
-                        <li>
-                            <a id="contactus-link" class="button"> Contact me</a>
-                        </li>
-                        <!-- End of do not redirect -->
-                    </ul>
-                </div>
-                <div class="links-container">
-                    <ul>
-                        <li>
-                            <div class="tooltip">
-                                <a class="social" href="https://www.youtube.com/@RemusDBD/"><i class="fab fa-youtube"></i></a>
-                                <span class="tooltiptext">YouTube</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tooltip">
-                                <a class="social" href="https://github.com/remusdbd"><i class="fab fa-github"></i></a>
-                                <span class="tooltiptext">GitHub</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tooltip">
-                                <a class="social" href="https://www.patreon.com/RemusDBD"><i class="fab fa-patreon"></i></a>
-                                <span class="tooltiptext">Patreon</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tooltip">
-                                <a class="social" href="https://www.linkedin.com/in/remusdbd/"><i class="fab fa-linkedin"></i></a>
-                                <span class="tooltiptext">Linkedin</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="tooltip">
-                                <a class="social" href="mailto:remusdbd@proton.me"><i class="fa fa-envelope"></i></a>
-                                <span class="tooltiptext">E-Mail</span>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="slide-footer">
+                    <div class="links-container links-container-main">
+                        <ul>
+                            <li>
+                                <a href="./blog/" class="button"> Blog</a>
+                            </li>
+                            <li>
+                                <a id="contactus-link" class="button"> Contact me</a>
+                            </li>
+                            <!-- End of do not redirect -->
+                        </ul>
+                    </div>
+                    <div class="links-container">
+                        <ul>
+                            <li>
+                                <div class="tooltip">
+                                    <a class="social" href="https://www.youtube.com/@RemusDBD/"><i class="fab fa-youtube"></i></a>
+                                    <span class="tooltiptext">YouTube</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tooltip">
+                                    <a class="social" href="https://github.com/remusdbd"><i class="fab fa-github"></i></a>
+                                    <span class="tooltiptext">GitHub</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tooltip">
+                                    <a class="social" href="https://www.patreon.com/RemusDBD"><i class="fab fa-patreon"></i></a>
+                                    <span class="tooltiptext">Patreon</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tooltip">
+                                    <a class="social" href="https://www.linkedin.com/in/remusdbd/"><i class="fab fa-linkedin"></i></a>
+                                    <span class="tooltiptext">Linkedin</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tooltip">
+                                    <a class="social" href="mailto:remusdbd@proton.me"><i class="fa fa-envelope"></i></a>
+                                    <span class="tooltiptext">E-Mail</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

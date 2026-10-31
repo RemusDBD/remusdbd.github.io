@@ -9,35 +9,74 @@ body {
 }
 
 
+/* === Hero background video === */
+.bg-video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    z-index: 0;
+    background-color: #101010;
+    pointer-events: none;
+}
+
+.bg-scrim {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.88) 0%,
+            rgba(16, 16, 16, 0.58) 20%,
+            rgba(16, 16, 16, 0.16) 45%,
+            rgba(16, 16, 16, 0.34) 70%,
+            rgba(16, 16, 16, 0.90) 100%);
+}
+
 .slide-container {
     font-family: 'NEXTSTEP', sans-serif;
     text-align: center;
     color: #48ff00;
-}
-
-.slide {}
-
-.avatar-container {
     position: relative;
-    animation-name: avatar-fade-in-animation;
-    animation-duration: 4s;
-    animation-timing-function: ease-out;
+    z-index: 2;
+    min-height: 100vh;
 }
 
-.avatar-container>img {
-    width: 300px;
-    margin: 50px;
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 5vh 16px 4vh;
+    box-sizing: border-box;
 }
 
-@keyframes avatar-fade-in-animation {
-    from {
-        opacity: 0;
-        top: -50px;
+.slide-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+/* Users who ask for less motion get the still frame instead of the loop */
+@media (prefers-reduced-motion: reduce) {
+
+    .bg-video {
+        display: none;
     }
 
-    to {
-        opacity: 1;
-        top: 0px;
+    .bg-scrim {
+        background-image: linear-gradient(180deg,
+                rgba(16, 16, 16, 0.88) 0%,
+                rgba(16, 16, 16, 0.58) 20%,
+                rgba(16, 16, 16, 0.16) 45%,
+                rgba(16, 16, 16, 0.34) 70%,
+                rgba(16, 16, 16, 0.90) 100%),
+            url('../assets/img/hero-poster.jpg');
+        background-size: cover;
+        background-position: center center;
     }
 }
 
