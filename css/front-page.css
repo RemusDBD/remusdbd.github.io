@@ -307,6 +307,9 @@ a.button:active {
             background-color: #101010;
             color: #fff;
             border-top: 1px solid #48ff00; /* Visual separation */
+            position: relative; /* stay above the fixed hero video */
+            z-index: 2;
+            scroll-margin-top: 0;
         }
 
         button {
@@ -321,5 +324,11 @@ a.button:active {
     font-family: 'Arial';
     text-align: left;
     color: #1e6901;
+}
+
+footer {
+    position: relative; /* stay above the fixed hero video */
+    z-index: 2;
+    background-color: #101010;
 }
 	

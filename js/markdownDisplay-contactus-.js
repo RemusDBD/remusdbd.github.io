@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById(targetDivId).style.display = 'block';
                 // Hide the main markdown display div
                 document.getElementById('markdownDisplay').style.display = 'none';
+                // Bring the panel into view; the hero above it fills the screen
+                document.getElementById(targetDivId).scrollIntoView({ behavior: 'smooth', block: 'start' });
             })
             .catch(error => console.error('Error loading content:', error));
     }
