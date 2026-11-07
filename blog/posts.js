@@ -7,6 +7,14 @@
 
 window.BLOG_POSTS = [
   {
+    title: "根源：月球漫步",
+    date: "2026-11-07",
+    tags: [],
+    excerpt: "",
+    url: "/blog/the-source-moonwalk/",
+    readingTime: "5 min read"
+  },
+  {
     title: "遇溺缺的是 AI 還是一條通 泳池帝國 的路?",
     date: "2026-10-13",
     tags: ["人工智能"],
