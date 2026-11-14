@@ -58,10 +58,22 @@ jobs:
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+            # The branch may advance while this job is generating the sitemap.
+            # Rebase onto the latest main, then regenerate from that exact tree.
+            git fetch origin main
+            git rebase origin/main
+            python scripts/generate_sitemap.py
+
             git add sitemap.xml
-            git commit -m "chore: refresh blog sitemap"
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            if git diff --cached --quiet; then
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+              echo "Sitemap became up to date after synchronising with main."
+            else
+              git commit -m "chore: refresh blog sitemap"
+              git push origin HEAD:main
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - name: Save changed blog file list
