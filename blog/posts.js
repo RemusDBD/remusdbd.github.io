@@ -7,6 +7,13 @@
 
 window.BLOG_POSTS = [
   {
+    title: "Rigged Workplace Only Protect the Star",
+    date: "2026-11-14",
+    tags: [],
+    excerpt: "",
+    url: "/blog/rigged-workplace-only-protect-the-star/"
+  },
+  {
     title: "根源：月球漫步",
     date: "2026-11-07",
     tags: [],
